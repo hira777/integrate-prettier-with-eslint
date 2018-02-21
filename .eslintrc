@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        // https://prettier.io/docs/en/options.htmlのオプションを指定できる
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}
