@@ -1,31 +1,19 @@
-# Prettier tutorial
+# Integrate Prettier into ESLint
 
-各ファイルの詳細は以下の記事をご覧ください。
+Sample Code integrating Prettier into ESLint.
+
+Learn more about files in this repository, read following article I posted (Japanese).
 
 [Prettier 入門](https://qiita.com/soarflat/items/06377f3b96964964a65d)
 
-## 使い方
-### clone
-
-```
-git clone git@github.com:hira777/prettier-tutorial.git
-cd prettier-tutorial
-```
-
-### install
+## Installation
 
 ```
 npm install
 ```
 
-or
+## Run ESLint
 
 ```
-yarn
-```
-
-### `eslint --fix`の実行
-
-```
-eslint --fix app.js
+npm run lint
 ```
