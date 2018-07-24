@@ -14,6 +14,8 @@ npm install
 
 ## Run ESLint
 
+You can format, lint and auto fix your code using Prettier and ESLint when you run "eslint --fix".
+
 ```
 npm run lint
 ```
