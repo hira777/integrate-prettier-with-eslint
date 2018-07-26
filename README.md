@@ -12,10 +12,16 @@ Learn more about files in this repository, read following article I posted (Japa
 npm install
 ```
 
-## Run ESLint
+## Usage
 
-You can format, lint and auto fix your code using Prettier and ESLint if you run command below.
+### ESLint(with Prettier)
+
+You can format, lint, auto-fix your code using Prettier and ESLint when you run command below.
 
 ```
 npm run lint
 ```
+
+### Pre-commit Hook
+
+You can use ESLint(with Prettier) with a pre-commit tool. This can run "npm run lint" to your files that are marked as "staged" via `git add` before you commit.
