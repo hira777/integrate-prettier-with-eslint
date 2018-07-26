@@ -24,4 +24,4 @@ npm run lint
 
 ### Pre-commit Hook
 
-You can use ESLint(with Prettier) with a pre-commit tool. This can run "npm run lint" to your files that are marked as "staged" via `git add` before you commit.
+You can use ESLint(with Prettier) with a pre-commit tool. This can run `npm run lint` to your files that are marked as "staged" via `git add` before you commit.
