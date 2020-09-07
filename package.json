@@ -2,14 +2,15 @@
   "name": "integrate-prettier-into-eslint",
   "version": "1.0.0",
   "scripts": {
-    "lint": "eslint --fix .",
-    "precommit": "lint-staged"
+    "lint": "eslint --fix ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": "eslint --fix"
   },
   "devDependencies": {
     "eslint": "^7.8.1",
