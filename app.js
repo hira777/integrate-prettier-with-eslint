@@ -4,23 +4,28 @@ class Person {
   }
 }
 
-new Person('soarflat');
-
 const profile = {
   name: 'soarflat',
   sex: 'male',
   location: 'Tokyo',
 };
 
-console.log(profile.name);
-
-// const hoge = () => console.log('hoge');
-
-const fooBar = (foo, bar) => {
-  console.log(foo);
-  console.log(bar);
+const hoge = (message) => {
+  console.log(message);
 };
 
-fooBar(111, {
-  hoge: 'hoge!',
-});
+hoge(new Person('Person').name);
+
+const fooBar = (a, b, c) => {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+};
+
+fooBar(
+  111,
+  {
+    hoge: 'hoge!',
+  },
+  profile
+);

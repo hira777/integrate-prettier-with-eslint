@@ -1,27 +1,33 @@
 # Integrate Prettier into ESLint
 
-Sample Code integrating Prettier into ESLint.
+Prettier と ESLint を併用したサンプルコード。
 
-Learn more about files in this repository, read following article I posted (Japanese).
+pre-commit フックが動作するようにしているので、`app.js`を更新してコミットすると Prettier と ESLint が実行される。
 
-[Prettier 入門 ～ESLintとの違いを理解して併用する～](https://qiita.com/soarflat/items/06377f3b96964964a65d)
+[Prettier 入門 ～ ESLint との違いを理解して併用する～](https://qiita.com/soarflat/items/06377f3b96964964a65d)
 
-## Installation
+## セットアップ
 
 ```
 npm install
 ```
 
-## Usage
+## 使い方
 
-### ESLint(with Prettier)
+### Prettier を実行
 
-You can format, lint, auto-fix your code using Prettier and ESLint when you run command below.
+```
+npm run format
+```
+
+### ESLint を実行
 
 ```
 npm run lint
 ```
 
-### Pre-commit Hook
+### Prettier と ESLint を実行
 
-You can use ESLint(with Prettier) with a pre-commit tool. This can run `npm run lint` to your files that are marked as "staged" via `git add` before you commit.
+```
+npm run fix
+```

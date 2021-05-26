@@ -1,24 +1,24 @@
 {
-  "name": "integrate-prettier-into-eslint",
+  "name": "integrate-prettier-with-eslint",
   "version": "1.0.0",
   "scripts": {
-    "lint": "eslint --fix ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "format": "prettier --write app.js",
+    "lint": "eslint --fix app.js",
+    "fix": "npm run format && npm run lint",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
-    "eslint": "^7.8.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0"
   },
   "license": "MIT"
 }
